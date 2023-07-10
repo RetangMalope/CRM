@@ -2,6 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Customer(models.Model):
+    """
+    Model representing a customer.
+    """
     name = models.CharField(max_length = 200, null = True)
     phone = models.CharField(max_length = 200, null = True)
     email = models.CharField(max_length = 200, null = True)
@@ -11,6 +14,9 @@ class Customer(models.Model):
     
     
 class Tag(models.Model):
+    """
+    Model representing a tag that can be associated with products.
+    """
     name = models.CharField(max_length = 200, null = True)
     def __str__(self):
         return self.name
@@ -18,7 +24,9 @@ class Tag(models.Model):
 
     
 class Product(models.Model):
-
+    """
+    Model representing a product.
+    """
     CATEGORY = (
         ('Indoor', 'Indoor'),
         ('Out Door', 'Out Door'),
@@ -36,7 +44,9 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-
+    """
+    Model representing an order.
+    """
     STATUS = (
     ('Pending', 'Pending'),
     ('Out for delivery', 'Out for delivery'),
