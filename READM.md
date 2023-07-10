@@ -84,3 +84,5 @@ URLs in 'members' App:
 
 In the 'members' app's urls.py file, URL patterns were defined for the 'login_user', 'logout_user', and 'register_user' views.
 Overall, the app was created by configuring the necessary settings, defining URL patterns, creating models for the 'accounts' app, implementing authentication views in the 'members' app, and associating the views with appropriate URL patterns.
+
+BY RETANG
